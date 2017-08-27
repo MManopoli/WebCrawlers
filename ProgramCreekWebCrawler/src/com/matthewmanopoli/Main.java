@@ -30,6 +30,10 @@ public class Main {
         if(rs.next()){
             // if you has a .next() then it has an element
             // So - do nothing
+            //
+            // for fun - if you want to print out the URL string WHEN THERE IS A NEXT = There is an element...
+            // System.out.println(rs.getString("URL"));
+            // getString returns the STRING contents of the column or field with name "STRING" or int index #
         }else{
             //store the URL to database to avoid parsing again
             sql = "INSERT INTO  `Record` " + "(`URL`) VALUES " + "(?);";
