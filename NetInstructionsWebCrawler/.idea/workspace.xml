@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a530fa29-2c58-4e87-9afd-0d5f57734d76" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/matthewmanopoli/Spider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NetInstructionsWebCrawler.iml" afterPath="$PROJECT_DIR$/NetInstructionsWebCrawler.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/matthewmanopoli/Main.java" afterPath="$PROJECT_DIR$/src/com/matthewmanopoli/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ProgramCreekWebCrawler/SQLite3DB.db" afterPath="$PROJECT_DIR$/../ProgramCreekWebCrawler/SQLite3DB.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ProgramCreekWebCrawler/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ProgramCreekWebCrawler/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ProgramCreekWebCrawler/src/com/matthewmanopoli/Main.java" afterPath="$PROJECT_DIR$/../ProgramCreekWebCrawler/src/com/matthewmanopoli/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

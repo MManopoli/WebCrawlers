@@ -18,8 +18,8 @@ public class Main {
 
     public static void main(String[] args) throws SQLException, IOException {
         db.runSql2("delete from Record;");
-        URL url = new URL("https://www.python.org/about/gettingstarted/");
-        processPage(url,"Monty");
+        URL url = new URL("http://www.baesystems.com/en/cybersecurity/home");
+        processPage(url,"innovative");
     }
 
     public static void processPage(URL url,String textToFind) throws SQLException, IOException{
@@ -44,7 +44,7 @@ public class Main {
             //get useful information
             Document doc = Jsoup.connect(url.toString()).ignoreContentType(true).ignoreHttpErrors(true).get();
 
-            if(doc.text().contains(textToFind)){
+            if(doc.text().toUpperCase().contains(textToFind.toUpperCase())){
                 System.out.println(url);
             }
 
