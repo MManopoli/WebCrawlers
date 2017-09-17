@@ -34,7 +34,10 @@ public class SpiderLeg {
     {
         try
         {
+            // Uses user_agent to make sure that the pages are not rendered as mobile pages and
+            // so that the page doesn't realize we're a robot
             Connection connection = Jsoup.connect(url).userAgent(USER_AGENT);
+            // Get the Document and store it in our private class variable
             Document htmlDocument = connection.get();
             this.htmlDocument = htmlDocument;
             if(connection.response().statusCode() == 200) // 200 is the HTTP OK status code
@@ -47,11 +50,12 @@ public class SpiderLeg {
                 System.out.println("**Failure** Retrieved something other than HTML");
                 return false;
             }
+            // Get the links using html HREF keyword
             Elements linksOnPage = htmlDocument.select("a[href]");
             System.out.println("Found (" + linksOnPage.size() + ") links");
             for(Element link : linksOnPage)
             {
-                this.links.add(link.absUrl("href"));
+                this.links.add(link.absUrl("href")); // add all links to links List<String>
             }
             return true;
         }

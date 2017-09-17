@@ -61,7 +61,9 @@ public class Spider {
             if(success)
             {
                 System.out.println(String.format("**Success** Word %s found at %s", searchWord, currentUrl));
-                break;
+                // This braek stops the loop when it finds the word
+                // comment out if you want to search up to MAX_PAGES_TO_SEARCH
+                //break;
             }
             this.pagesToVisit.addAll(leg.getLinks());
         }
